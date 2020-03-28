@@ -1,3 +1,15 @@
+$color-primary: #f13a59;
+$color-secondary: #00a2c7;
+$color-white: #fff;
+$color-black: #000;
+$color-grey-1: #f6f7f8;
+$color-grey-2: #e6e6e6;
+$color-grey-3: #d9d9d9;
+$color-grey-4: #c5c4c4;
+$color-grey-5: #a2a2a2;
+$color-grey-6: #757575;
+$color-grey-7: #212121;
+
 *,
 *::before,
 *::after {
@@ -12,4 +24,14 @@ html {
 
 body {
   box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 10rem 75vh 7rem repeat(5, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start] repeat(14, [col-start] minmax(min-content, 9.5rem) [col-end])
+    [center-end]
+    minmax(6rem, 1fr) [full-end];
 }

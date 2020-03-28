@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.container {
+  display: grid;
+  grid-template-rows: 10rem 75vh 7rem repeat(5, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(14, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+body {
+  color: #777;
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  font-weight: 400; }
+
+.btn-text {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.3rem 2rem;
+  text-decoration: none; }
+  .btn-text--blue {
+    color: #00a2c7 !important; }
+  .btn-text--grey {
+    transition: all 0.3s;
+    color: #757575; }
+    .btn-text--grey:hover {
+      color: #00a2c7; }
+
+.categogies {
+  background-color: lightgreen;
+  grid-column: center-start / center-end; }
+
+.categogy-row {
+  background-color: chocolate;
+  grid-column: full-start / full-end; }
+
+.footer {
+  background-color: cornflowerblue;
+  grid-column: full-start / full-end; }
+
+.get-the-app {
+  background-color: palevioletred;
+  grid-column: full-start / full-end; }
+
+.groups-near-you {
+  background-color: peru;
+  grid-column: center-start / center-end; }
+
+.hero {
+  background-color: olivedrab;
+  grid-column: full-start / full-end; }
+
+.how-meet-up-works {
+  background-color: teal;
+  grid-column: full-start / full-end; }
+
+.navbar {
+  grid-column: full-start / full-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navbar__logo {
+    color: #f13a59;
+    font-size: 3rem;
+    text-decoration: none;
+    margin-left: 1.5rem; }
+  .navbar__navigation {
+    list-style: none;
+    display: flex; }
+    .navbar__navigation li:first-child {
+      border-right: 1px solid #a2a2a2; }

@@ -1,0 +1,26 @@
+.navbar {
+  grid-column: full-start / full-end;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    color: $color-primary;
+    font-size: 3rem;
+    text-decoration: none;
+    margin-left: 1.5rem;
+  }
+
+  &__navigation {
+    list-style: none;
+    display: flex;
+
+    li:first-child {
+      border-right: 1px solid $color-grey-5;
+    }
+  }
+
+  &__item {
+  }
+}
