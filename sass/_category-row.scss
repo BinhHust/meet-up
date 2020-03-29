@@ -1,0 +1,30 @@
+.category-row {
+  background-color: $color-white;
+  grid-column: full-start / full-end;
+  border-bottom: 1px solid $color-grey-4;
+
+  &__boxes {
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      flex-wrap: wrap;
+      align-content: space-evenly;
+    }
+  }
+
+  &__box {
+    &:not(:last-child) {
+      margin-right: 1.3rem;
+    }
+  }
+}

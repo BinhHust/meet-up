@@ -10,6 +10,9 @@ $color-grey-5: #a2a2a2;
 $color-grey-6: #757575;
 $color-grey-7: #212121;
 
+$bp-largest: 80em;
+$bp-large: 62.5em;
+
 *,
 *::before,
 *::after {
@@ -28,10 +31,14 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 10rem 75vh 7rem repeat(5, min-content);
+  grid-template-rows: 15vh 75vh 10vh repeat(5, min-content);
   grid-template-columns:
     [full-start] minmax(6rem, 1fr)
-    [center-start] repeat(14, [col-start] minmax(min-content, 9.5rem) [col-end])
+    [center-start] repeat(12, [col-start] minmax(min-content, 9rem) [col-end])
     [center-end]
     minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: 15vh 75vh 15vh repeat(5, min-content);
+  }
 }

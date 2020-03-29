@@ -18,3 +18,15 @@
     }
   }
 }
+
+.btn-outline {
+  color: $color-grey-6;
+  diplay: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: $color-grey-2;
+  padding: 0.5rem 1rem;
+  border: 1px solid $color-grey-5;
+  border-radius: 1rem;
+}
