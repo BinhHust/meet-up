@@ -37,11 +37,23 @@ body {
     display: block;
     font-size: 1.5rem; }
 
+.heading-secondary-t2 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 5rem;
+  word-spacing: 3px; }
+
+.heading-tetiary {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem; }
+
 .btn-text {
   display: block;
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 0.3rem 2rem;
   text-decoration: none; }
   .btn-text--blue {
     color: #00a2c7 !important; }
@@ -50,6 +62,8 @@ body {
     color: #757575; }
     .btn-text--grey:hover {
       color: #00a2c7; }
+  .btn-text--padding {
+    padding: 0.3rem 2rem; }
 
 .btn-outline {
   color: #757575;
@@ -174,8 +188,40 @@ body {
   grid-column: full-start / full-end; }
 
 .how-meet-up-works {
-  background-color: teal;
-  grid-column: full-start / full-end; }
+  background-color: #0f1721;
+  grid-column: full-start / full-end;
+  color: #fff;
+  padding: 5rem 0; }
+  .how-meet-up-works__boxes {
+    max-width: 108rem;
+    margin: 0 auto;
+    display: flex; }
+    @media only screen and (max-width: 56.25em) {
+      .how-meet-up-works__boxes {
+        flex-direction: column;
+        max-width: 100%;
+        width: 80%; }
+        .how-meet-up-works__boxes > :not(:last-child) {
+          margin-bottom: 3rem; } }
+  .how-meet-up-works__box {
+    flex: 1;
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 2rem 4rem; }
+    .how-meet-up-works__box--b1 {
+      grid-column: center-start / col-end 6; }
+    .how-meet-up-works__box--b2 {
+      grid-column: col-start 7 / center-end; }
+  .how-meet-up-works__icon {
+    height: 6rem;
+    width: 6rem;
+    fill: #00a2c7; }
+  .how-meet-up-works__detail p {
+    font-size: 1.8rem;
+    word-spacing: 2px; }
+  .how-meet-up-works__button {
+    grid-column: 2 / 3; }
 
 .navbar {
   grid-column: full-start / full-end;

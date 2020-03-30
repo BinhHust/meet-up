@@ -1,4 +1,55 @@
 .how-meet-up-works {
-  background-color: teal;
+  background-color: $color-secondary-dark;
   grid-column: full-start / full-end;
+  color: $color-white;
+  padding: 5rem 0;
+
+  &__boxes {
+    max-width: 108rem;
+    margin: 0 auto;
+    display: flex;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      max-width: 100%;
+      width: 80%;
+
+      & > :not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__box {
+    flex: 1;
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 2rem 4rem;
+
+    &--b1 {
+      grid-column: center-start / col-end 6;
+    }
+
+    &--b2 {
+      grid-column: col-start 7 / center-end;
+    }
+  }
+
+  &__icon {
+    height: 6rem;
+    width: 6rem;
+    fill: $color-secondary;
+  }
+
+  &__detail {
+    p {
+      font-size: 1.8rem;
+      word-spacing: 2px;
+    }
+  }
+
+  &__button {
+    grid-column: 2 / 3;
+  }
 }
