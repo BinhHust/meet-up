@@ -44,6 +44,11 @@ body {
   margin-bottom: 5rem;
   word-spacing: 3px; }
 
+.heading-secondary-t3 {
+  font-size: 3.5rem;
+  color: #212121;
+  line-height: 1.5; }
+
 .heading-tetiary {
   font-size: 2.8rem;
   font-weight: 700;
@@ -176,8 +181,20 @@ body {
   grid-column: full-start / full-end; }
 
 .get-the-app {
-  background-color: palevioletred;
-  grid-column: full-start / full-end; }
+  background-color: #fff;
+  grid-column: full-start / full-end;
+  display: flex;
+  justify-content: space-evenly; }
+  .get-the-app__download {
+    align-self: center; }
+  .get-the-app__store {
+    margin-top: 4rem; }
+  .get-the-app__image {
+    width: 17rem; }
+    .get-the-app__image:not(:last-child) {
+      margin-right: 1.5rem; }
+  .get-the-app__app {
+    width: 25rem; }
 
 .groups-near-you {
   background-color: peru;

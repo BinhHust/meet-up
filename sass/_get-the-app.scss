@@ -1,4 +1,26 @@
 .get-the-app {
-  background-color: palevioletred;
+  background-color: $color-white;
   grid-column: full-start / full-end;
+  display: flex;
+  justify-content: space-evenly;
+
+  &__download {
+    align-self: center;
+  }
+
+  &__store {
+    margin-top: 4rem;
+  }
+
+  &__image {
+    width: 17rem;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__app {
+    width: 25rem;
+  }
 }
