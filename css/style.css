@@ -7,6 +7,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 47.5em) {
+    html {
+      font-size: 43.75%; } }
 
 body {
   box-sizing: border-box; }
@@ -173,8 +182,15 @@ body {
       .category-row__boxes {
         flex-wrap: wrap;
         align-content: space-evenly; } }
+    @media only screen and (max-width: 26.25em) {
+      .category-row__boxes {
+        margin: 0 auto;
+        width: 80%; } }
   .category-row__box:not(:last-child) {
     margin-right: 1.3rem; }
+  @media only screen and (max-width: 26.25em) {
+    .category-row__box {
+      flex: 0 0 1; } }
 
 .footer {
   background-color: cornflowerblue;
@@ -185,16 +201,33 @@ body {
   grid-column: full-start / full-end;
   display: flex;
   justify-content: space-evenly; }
+  @media only screen and (max-width: 47.5em) {
+    .get-the-app {
+      flex-wrap: wrap; } }
   .get-the-app__download {
-    align-self: center; }
+    align-self: center;
+    padding: 2rem; }
+    @media only screen and (max-width: 47.5em) {
+      .get-the-app__download {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
   .get-the-app__store {
     margin-top: 4rem; }
+    @media only screen and (max-width: 47.5em) {
+      .get-the-app__store {
+        display: flex;
+        justify-content: center; } }
   .get-the-app__image {
     width: 17rem; }
     .get-the-app__image:not(:last-child) {
       margin-right: 1.5rem; }
   .get-the-app__app {
-    width: 25rem; }
+    width: 25rem;
+    padding-left: 5rem; }
+    @media only screen and (max-width: 47.5em) {
+      .get-the-app__app {
+        padding-left: 0; } }
 
 .groups-near-you {
   background-color: peru;
