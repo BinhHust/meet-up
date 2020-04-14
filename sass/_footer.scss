@@ -1,4 +1,119 @@
 .footer {
-  background-color: cornflowerblue;
+  background-color: #353e48;
   grid-column: full-start / full-end;
+
+  &__container {
+    max-width: 108rem;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 6rem;
+    }
+  }
+
+  &__top {
+    padding: 3rem 0;
+    border-bottom: 1px solid $color-grey-5;
+
+    a {
+      font-size: 1.6rem;
+      color: $color-white;
+    }
+  }
+
+  &__body {
+    padding: 3rem 0 6rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 0 2rem;
+  }
+
+  &__account {
+  }
+
+  &__discover {
+  }
+
+  &__meetup {
+  }
+
+  &__account,
+  &__discover,
+  &__meetup {
+    ul {
+      margin-top: 1.5rem;
+      list-style: none;
+      font-size: 1.6rem;
+      color: $color-grey-5;
+      font-weight: 700;
+
+      li {
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  &__follow {
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 3rem 0;
+      li {
+        &:not(:last-child) {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+
+  &__language {
+  }
+
+  &__bottom {
+    background-color: #2f363f;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    color: $color-white;
+  }
+
+  &__bottom-container {
+    max-width: 108rem;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 0 6rem;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        position: relative;
+
+        &::before {
+          content: ".";
+          position: absolute;
+          top: -3px;
+          right: -1rem;
+        }
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
 }

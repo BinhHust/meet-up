@@ -64,6 +64,11 @@ body {
   line-height: 1;
   margin-bottom: 1rem; }
 
+.heading-fouth {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700; }
+
 .btn-text {
   display: block;
   font-size: 1.5rem;
@@ -193,8 +198,70 @@ body {
       flex: 0 0 1; } }
 
 .footer {
-  background-color: cornflowerblue;
+  background-color: #353e48;
   grid-column: full-start / full-end; }
+  .footer__container {
+    max-width: 108rem;
+    margin: 0 auto; }
+    @media only screen and (max-width: 62.5em) {
+      .footer__container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 6rem; } }
+  .footer__top {
+    padding: 3rem 0;
+    border-bottom: 1px solid #a2a2a2; }
+    .footer__top a {
+      font-size: 1.6rem;
+      color: #fff; }
+  .footer__body {
+    padding: 3rem 0 6rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 0 2rem; }
+  .footer__account ul, .footer__discover ul, .footer__meetup ul {
+    margin-top: 1.5rem;
+    list-style: none;
+    font-size: 1.6rem;
+    color: #a2a2a2;
+    font-weight: 700; }
+    .footer__account ul li, .footer__discover ul li, .footer__meetup ul li {
+      padding: 1rem 0; }
+  .footer__follow svg {
+    width: 2.5rem;
+    height: 2.5rem; }
+  .footer__follow ul {
+    list-style: none;
+    display: flex;
+    margin: 3rem 0; }
+    .footer__follow ul li:not(:last-child) {
+      margin-right: 3rem; }
+  .footer__bottom {
+    background-color: #2f363f;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    color: #fff; }
+  .footer__bottom-container {
+    max-width: 108rem;
+    margin: 0 auto; }
+    @media only screen and (max-width: 62.5em) {
+      .footer__bottom-container {
+        padding: 0 6rem; } }
+    .footer__bottom-container span {
+      display: block;
+      margin-bottom: 1.5rem; }
+    .footer__bottom-container ul {
+      list-style: none;
+      display: flex; }
+      .footer__bottom-container ul li {
+        position: relative; }
+        .footer__bottom-container ul li::before {
+          content: ".";
+          position: absolute;
+          top: -3px;
+          right: -1rem; }
+        .footer__bottom-container ul li:not(:last-child) {
+          margin-right: 2rem; }
 
 .get-the-app {
   background-color: #fff;
