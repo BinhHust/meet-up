@@ -1,4 +1,30 @@
 .hero {
-  background-color: olivedrab;
   grid-column: full-start / full-end;
+  position: relative;
+
+  &__text {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+  }
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.95;
+  overflow: hidden;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

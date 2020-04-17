@@ -34,6 +34,19 @@ body {
   line-height: 1.7;
   font-weight: 400; }
 
+.heading-primary {
+  color: #fff;
+  margin-bottom: 3rem; }
+  .heading-primary--main, .heading-primary--sub {
+    display: block; }
+  .heading-primary--main {
+    font-size: 4rem;
+    font-weight: 900; }
+  .heading-primary--sub {
+    font-size: 2rem;
+    font-weight: 700;
+    word-spacing: 1.5px; }
+
 .heading-secondary-t1 {
   margin-bottom: 2.5rem; }
   .heading-secondary-t1--main {
@@ -68,6 +81,19 @@ body {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 700; }
+
+.btn:link,
+.btn:visited {
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 700;
+  display: inline-block;
+  padding: 1rem 10rem;
+  border-radius: 5px;
+  background-color: #f13a59;
+  letter-spacing: 1px; }
 
 .btn-text {
   display: block;
@@ -303,20 +329,7 @@ body {
     max-width: 108rem;
     width: 100%;
     margin: 0 auto; }
-    @media only screen and (max-width: 62.5em) {
-      .groups-near-you__container {
-        max-width: 111.111rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .groups-near-you__container {
-        max-width: 112.5rem; } }
-    @media only screen and (max-width: 47.5em) {
-      .groups-near-you__container {
-        max-width: 60rem; } }
-    @media only screen and (max-width: 26.25em) {
-      .groups-near-you__container {
-        max-width: 60rem; } }
   .groups-near-you__box {
-    width: 100%;
     background-color: #fff !important;
     border-radius: 1rem;
     overflow: hidden;
@@ -324,6 +337,9 @@ body {
     border: 1px solid #e6e6e6; }
     .groups-near-you__box:not(:nth-child(4n)) {
       margin-right: 2rem; }
+    @media only screen and (max-width: 62.5em) {
+      .groups-near-you__box {
+        margin-right: 0rem; } }
   .groups-near-you__img {
     height: 15rem; }
     .groups-near-you__img img {
@@ -369,8 +385,29 @@ body {
   left: -2rem; }
 
 .hero {
-  background-color: olivedrab;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  position: relative; }
+  .hero__text {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.95;
+  overflow: hidden; }
+  .bg-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .how-meet-up-works {
   background-color: #0f1721;
