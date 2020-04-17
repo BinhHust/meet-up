@@ -1,7 +1,7 @@
 .categories {
   background-color: $color-white;
   grid-column: center-start / center-end;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 
   &__list {
     display: grid;

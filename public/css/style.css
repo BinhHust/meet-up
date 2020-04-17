@@ -124,7 +124,7 @@ body {
 .categories {
   background-color: #fff;
   grid-column: center-start / center-end;
-  margin-bottom: 3rem; }
+  margin: 3rem 0; }
   .categories__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
