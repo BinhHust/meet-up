@@ -1,4 +1,98 @@
 .groups-near-you {
-  background-color: peru;
   grid-column: center-start / center-end;
+  margin: 3rem 0 5rem;
+
+  &__container {
+    max-width: 108rem;
+    width: 100%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-large) {
+      max-width: 111.111rem; // 1rem = 9px -> 1000px
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 112.5rem; // 1rem = 8px -> 900px
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      max-width: 60rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 60rem;
+    }
+  }
+
+  &__box {
+    width: 100%;
+    background-color: #fff !important;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border: 1px solid $color-grey-2;
+
+    &:not(:nth-child(4n)) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__img {
+    height: 15rem;
+
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__detail {
+    padding: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-weight: 700;
+    color: #111;
+    font-size: 2.2rem;
+  }
+
+  &__event {
+    display: block;
+    font-size: 1.5rem;
+    color: $color-grey-7;
+    margin-bottom: 3rem;
+  }
+
+  &__mem {
+    font-size: 1.4rem;
+  }
+}
+
+.glider-next,
+.glider-prev {
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $color-white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+.glider-next {
+  right: -2rem;
+}
+
+.glider-prev {
+  left: -2rem;
 }
